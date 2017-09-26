@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">DESCRICAO</a>
+    <a href="#relatorios" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RELATORIOS</a>
+    <a href="#elementos" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ELEMENTOS</a>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Pulp Popcorn</h2>
+    <p class="w3-justify">Alguém decide ver um filme, mas não tem um filme em concreto em mente. 
+	Para encontrar um filme de uma forma não aleatória é necessário pesquisar manualmente na Internet filmes que tenham as várias características que satisfaçam a vontade da pessoa na altura, 
+	coisa que pode ser demorada e entediante. 
+	Adicionalmente, queremos incorporar a possibilidade de se recomendar filmes a outros utilizadores (talvez através de mensagens ou notificações).
+	O objectivo do projecto é uma aplicação que recomenda filmes ao utilizador com base no que este tem como interesse. Para tal, a aplicação tem que ter presente, em back end, uma base de dados com vários filmes e categorias associadas a cada filme, como rating, género, idade mínima, actores principais, keywords, etc. O front end consiste numa interface em que seja possível o utilizador filtrar o conjunto de filmes que lhe poderá interessar fazendo uso das categorias mencionadas anteriormente. 
+
+</p>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black " id="relatorios">
+      <h2 class="w3-wide w3-center">RELATORIOS</h2>
+	  <div class="w3-row w3-padding-32 w3-content w3-center">
+		  <div class="w3-third">
+			<a href="C:\Users\j.borralho\Desktop\Movie Thing.pdf" download><p>Stage 1</p></a>
+		  </div>
+	</div>      
+    </div>
+	
+	<div class="w3-container w3-content w3-center w3-padding-64" id="elementos">
+    <div class="w3-row w3-padding-32">
+		<p class="w3-opacity"><i>Turno Prático nº 2</i></p>
+      <div class="w3-third">
+        <p>João Borralho 45456</p>
+      </div>
+      <div class="w3-third">
+        <p>Tiago Conceição 46265</p>
+      </div>
+      <div class="w3-third">
+        <p>João Pacheco 45265</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <!-- The Tour Section -->
+  
+  
+<!-- End Page Content -->
+</div>
+<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
