@@ -28,11 +28,11 @@ body {font-family: "Lato", sans-serif}
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
     <h2 class="w3-wide">Pulp Popcorn</h2>
-    <p class="w3-justify">Alguém decide ver um filme, mas não tem um filme em concreto em mente. 
-	Para encontrar um filme de uma forma não aleatória é necessário pesquisar manualmente na Internet filmes que tenham as várias características que satisfaçam a vontade da pessoa na altura, 
-	coisa que pode ser demorada e entediante. 
+    <p class="w3-justify">Alguém decide ver um filme, mas não tem um filme em concreto em mente.
+	Para encontrar um filme de uma forma não aleatória é necessário pesquisar manualmente na Internet filmes que tenham as várias características que satisfaçam a vontade da pessoa na altura,
+	coisa que pode ser demorada e entediante.
 	Adicionalmente, queremos incorporar a possibilidade de se recomendar filmes a outros utilizadores (talvez através de mensagens ou notificações).
-	O objectivo do projecto é uma aplicação que recomenda filmes ao utilizador com base no que este tem como interesse. Para tal, a aplicação tem que ter presente, em back end, uma base de dados com vários filmes e categorias associadas a cada filme, como rating, género, idade mínima, actores principais, keywords, etc. O front end consiste numa interface em que seja possível o utilizador filtrar o conjunto de filmes que lhe poderá interessar fazendo uso das categorias mencionadas anteriormente. 
+	O objectivo do projecto é uma aplicação que recomenda filmes ao utilizador com base no que este tem como interesse. Para tal, a aplicação tem que ter presente, em back end, uma base de dados com vários filmes e categorias associadas a cada filme, como rating, género, idade mínima, actores principais, keywords, etc. O front end consiste numa interface em que seja possível o utilizador filtrar o conjunto de filmes que lhe poderá interessar fazendo uso das categorias mencionadas anteriormente.
 
 </p>
   </div>
@@ -42,11 +42,11 @@ body {font-family: "Lato", sans-serif}
       <h2 class="w3-wide w3-center">RELATORIOS</h2>
 	  <div class="w3-row w3-padding-32 w3-content w3-center">
 		  <div class="w3-third">
-			<a href="C:\Users\j.borralho\Desktop\Movie Thing.pdf" download><p>Stage 1</p></a>
+			<a href="docs\Movie Thing.pdf" download><p>Stage 1</p></a>
 		  </div>
-	</div>      
+	</div>
     </div>
-	
+
 	<div class="w3-container w3-content w3-center w3-padding-64" id="elementos">
     <div class="w3-row w3-padding-32">
 		<p class="w3-opacity"><i>Turno Prático nº 2</i></p>
@@ -62,10 +62,10 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
   </div>
-  
+
   <!-- The Tour Section -->
-  
-  
+
+
 <!-- End Page Content -->
 </div>
 <script>
@@ -99,12 +99,12 @@ function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
     for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
+       x[i].style.display = "none";
     }
     myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
@@ -112,7 +112,7 @@ function myFunction() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
-    } else { 
+    } else {
         x.className = x.className.replace(" w3-show", "");
     }
 }
